@@ -3,104 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndoNusa Export | Premium Charcoal & Banana Leaves</title>
-    <!-- Menggunakan Tailwind CSS untuk desain cepat & modern -->
+    <title>Archipelago Elements | Premium Indonesian B2B Supplier</title>
+    <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .serif-title { font-family: 'Playfair Display', serif; }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans">
+<body class="bg-[#FBFBFA] text-slate-800 antialiased selection:bg-emerald-800 selection:text-white">
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
+    <!-- NAVIGATION BAR -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-stone-100">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold tracking-wider text-green-800">INDONUSA <span class="text-gray-600">EXPORT</span></div>
-            <nav class="space-x-6 text-sm font-medium">
-                <a href="#about" class="hover:text-green-700">About</a>
-                <a href="#briket" class="hover:text-green-700">Charcoal</a>
-                <a href="#leaves" class="hover:text-green-700">Banana Leaves</a>
-                <a href="#contact" class="bg-green-700 text-white px-4 py-2 rounded shadow hover:bg-green-800 transition">Inquire Now</a>
+            <div class="flex items-center space-x-2">
+                <span class="text-xl font-bold tracking-tight text-stone-900">ARCHIPELAGO<span class="text-emerald-700">.</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-stone-600">
+                <a href="#about" class="hover:text-emerald-700 transition">Our Story</a>
+                <a href="#briquette" class="hover:text-emerald-700 transition">Coconut Charcoal</a>
+                <a href="#leaves" class="hover:text-emerald-700 transition">Banana Leaves</a>
             </nav>
+            <div>
+                <a href="#contact" class="bg-stone-900 hover:bg-emerald-800 text-white px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 shadow-sm">
+                    Inquire Now
+                </a>
+            </div>
         </div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="max-w-7xl mx-auto px-6 py-20 text-center">
-        <span class="text-green-700 font-semibold tracking-widest text-sm uppercase">Global B2B Supplier</span>
-        <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mt-2 max-w-3xl mx-auto leading-tight">
-            Connecting Global Industries with Sustainable Indonesian Elements
-        </h1>
-        <p class="text-gray-600 mt-6 max-w-xl mx-auto text-lg">
-            Premium Coconut Charcoal Briquettes and Fresh-Cut Banana Leaves. Ethically sourced, rigorously tested, and ready for worldwide shipping.
-        </p>
-        <div class="mt-10">
-            <a href="#contact" class="bg-gray-900 text-white px-8 py-3.5 rounded-md font-medium shadow-lg hover:bg-gray-800 transition mr-4">Get a Free Quote</a>
-            <a href="#briket" class="text-gray-700 font-medium hover:underline">Explore Products &rarr;</a>
-        </div>
-    </section>
-
-    <!-- PRODUCT SECTION: BRIQUETTE -->
-    <section id="briket" class="bg-white py-16 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-xs font-bold uppercase tracking-widest text-orange-600">Eco-Friendly Energy</span>
-                <h2 class="text-3xl font-bold text-gray-900 mt-1">Premium Coconut Charcoal Briquettes</h2>
-                <p class="text-gray-600 mt-4 leading-relaxed">
-                    Made from 100% natural coconut shells from Indonesian plantations. Perfect for Hookah/Shisha and premium BBQ with high heat output, minimal ash, and zero chemical additives.
+    <section class="relative overflow-hidden py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6 text-left">
+                <div class="inline-flex items-center space-x-2 bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                    <span class="text-xs font-semibold text-emerald-800 tracking-wider uppercase">Premium Global B2B Partner</span>
+                </div>
+                <h1 class="serif-title text-4xl md:text-6xl text-stone-900 leading-[1.15] font-semibold">
+                    Bringing Indonesia's Rich <span class="italic text-emerald-700">Natural Elements</span> to Global Industries.
+                </h1>
+                <p class="text-stone-600 text-base md:text-lg max-w-xl leading-relaxed">
+                    Sustainably sourced, rigorously inspected, and packed for international transit. Discover our premium coconut shell charcoal briquettes and pristine banana leaves.
                 </p>
-                <!-- Spec Snapshot -->
-                <div class="mt-6 grid grid-cols-2 gap-4 border-t border-gray-100 pt-6">
-                    <div>
-                        <span class="block text-sm text-gray-500">Fixed Carbon</span>
-                        <span class="text-lg font-semibold text-gray-800">> 80%</span>
-                    </div>
-                    <div>
-                        <span class="block text-sm text-gray-500">Burning Time</span>
-                        <span class="text-lg font-semibold text-gray-800">2.5+ Hours</span>
-                    </div>
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-emerald-700 hover:bg-emerald-800 text-white text-center px-8 py-4 rounded-xl font-medium shadow-md transition-all">
+                        Request Specifications
+                    </a>
+                    <a href="#briquette" class="border border-stone-200 hover:border-stone-400 text-stone-800 text-center px-8 py-4 rounded-xl font-medium transition-all flex items-center justify-center space-x-2">
+                        <span>Explore Catalog</span>
+                        <span>&darr;</span>
+                    </a>
                 </div>
             </div>
-            <!-- Placeholder untuk gambar briket Anda -->
-            <div class="bg-gray-100 h-80 rounded-xl flex items-center justify-center border border-gray-200 shadow-inner">
-                <span class="text-gray-400">[ Premium Charcoal Image Showcase ]</span>
+            
+            <!-- HERO IMAGE GRID (Menggunakan gambar placeholder premium dari Unsplash) -->
+            <div class="lg:col-span-5 grid grid-cols-12 gap-4 relative">
+                <div class="col-span-7 rounded-2xl overflow-hidden shadow-xl aspect-[3/4] bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=600&q=80" alt="Sustainable Charcoal Production" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="col-span-5 rounded-2xl overflow-hidden shadow-lg aspect-square mt-12 bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=400&q=80" alt="Fresh Leaves Presentation" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-emerald-100/50 rounded-full blur-2xl -z-10"></div>
             </div>
         </div>
     </section>
 
-    <!-- PRODUCT SECTION: BANANA LEAVES -->
-    <section id="leaves" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-            <!-- Placeholder untuk gambar daun pisang Anda -->
-            <div class="bg-gray-200 h-80 rounded-xl flex items-center justify-center border border-gray-300 shadow-inner md:order-first order-last">
-                <span class="text-gray-400">[ Fresh Banana Leaves Packaging Image ]</span>
-            </div>
-            <div>
-                <span class="text-xs font-bold uppercase tracking-widest text-green-600">Fresh Agriculture</span>
-                <h2 class="text-3xl font-bold text-gray-900 mt-1">Fresh & Frozen Banana Leaves</h2>
-                <p class="text-gray-600 mt-4 leading-relaxed">
-                    Carefully selected organic banana leaves, cleaned and sized according to international hospitality and culinary standards. Available in fresh or vacuum-sealed frozen options for prolonged shelf life.
-                </p>
-                <div class="mt-6 grid grid-cols-2 gap-4 border-t border-gray-200 pt-6">
-                    <div>
-                        <span class="block text-sm text-gray-500">Processing</span>
-                        <span class="text-lg font-semibold text-gray-800">Cleaned & Sorted</span>
-                    </div>
-                    <div>
-                        <span class="block text-sm text-gray-500">Shipping</span>
-                        <span class="text-lg font-semibold text-gray-800">Reefer Container</span>
-                    </div>
+    <!-- BRAND VALUES (Kenangan Coffee Clean Style) -->
+    <section id="about" class="bg-stone-900 text-stone-100 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="space-y-2">
+                    <span class="text-emerald-400 font-bold text-lg">01 /</span>
+                    <h3 class="text-lg font-semibold text-white">100% Sustainable Trade</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">We partner directly with independent Indonesian farmers and coconut processors, ensuring equitable wages and zero deforestation.</p>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-emerald-400 font-bold text-lg">02 /</span>
+                    <h3 class="text-lg font-semibold text-white">Export-Grade Rigor</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">Every batch undergoes rigorous quality control checking moisture content, drop resistance, and structural integrity before port loading.</p>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-emerald-400 font-bold text-lg">03 /</span>
+                    <h3 class="text-lg font-semibold text-white">Global Cold Chain Ready</h3>
+                    <p class="text-stone-400 text-sm leading-relaxed">Our perishables are vacuum-sealed and shipped via calibrated Reefer Containers to retain moisture and vivid color until arrival.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER / CONTACT -->
-    <footer id="contact" class="bg-gray-900 text-gray-400 py-12 text-center">
-        <div class="max-w-xl mx-auto px-6">
-            <h3 class="text-white text-2xl font-bold mb-4">Ready to Order?</h3>
-            <p class="mb-6 text-sm">Contact our export representation for custom sizing, packaging, and shipping rates to your country.</p>
-            <a href="mailto:export@yourdomain.com" class="inline-block bg-green-600 text-white font-medium px-6 py-3 rounded hover:bg-green-700 transition">
-                Contact via Email: info@indonusaexport.com
-            </a>
-            <p class="mt-10 text-xs text-gray-600">&copy; 2026 IndoNusa Export. All rights reserved.</p>
+    <!-- PRODUCT 1: COCONUT CHARCOAL -->
+    <section id="briquette" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div class="rounded-3xl overflow-hidden shadow-2xl bg-stone-800 aspect-[4/3] group">
+                <!-- Gambar visual arang menyala premium -->
+                <img src="https://images.unsplash.com/photo-1598449356475-b9f71db7d847?auto=format&fit=crop&w=1000&q=80" alt="Premium Hookah Charcoal" class="w-full h-full object-cover group-hover:scale-102 transition duration-700 opacity-90">
+            </div>
+            <div class="space-y-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-700 bg-amber-50 border border-amber-100 px-3 py-1 rounded-full">Eco-Energy Element</span>
+                <h2 class="serif-title text-3xl md:text-4xl font-semibold text-stone-900">Premium Coconut Shell Charcoal Briquettes</h2>
+                <p class="text-stone-600 leading-relaxed">
+                    Engineered purely from high-density Indonesian coconut shells. Our briquettes deliver remarkably consistent heat output with odorless, smokeless emission—tailored specifically for Shisha/Hookah lounges and upscale culinary establishments globally.
+                </p>
+                
+                <!-- Spesifikasi Teknis Box -->
+                <div class="bg-stone-50 border border-stone-200/60 p-6 rounded-2xl grid grid-cols-2 gap-6">
+                    <div>
+                        <span class="block text-xs font-medium text-stone-400 uppercase tracking-wider">Fixed Carbon</span>
+                        <span class="text-xl font-bold text-stone-900">&gt; 80% - 85%</span>
+                    </div>
+                    <div>
+                        <span class="block text-xs font-medium text-stone-400 uppercase tracking-wider">Total Moisture</span>
+                        <span class="text-xl font-bold text-stone-900">&lt; 5.5%</span>
+                    </div>
+                    <div>
+                        <span class="block text-xs font-medium text-stone-400 uppercase tracking-wider">Ash Content</span>
+                        <span class="text-xl font-bold text-stone-900">2% - 2.5% (White)</span>
+                    </div>
+                    <div>
+                        <span class="block text-xs font-medium text-stone-400 uppercase tracking-wider">Burning Duration</span>
+                        <span class="text-xl font-bold text-stone-900">Up to 3 Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT 2: BANANA LEAVES -->
+    <section id="leaves" class="py-24 bg-stone-50 border-y border-stone-200/50">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6 lg:order-first order-last">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-100 px-3 py-1 rounded-full">Organic Agricultural Supply</span>
+                <h2 class="serif-title text-3xl md:text-4xl font-semibold text-stone-900">Fresh & Vacuum-Sealed Frozen Banana Leaves</h2>
+                <p class="text-stone-600 leading-relaxed">
+                    Hand-picked at peak vitality from sustainable plantations across Java. Each leaf is thoroughly washed, sanitized, stripped of rigid midribs, and tailored into uniform dimensions required for modern hospitality, industrial food wrappers, and catering imports.
+                </p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="flex items-start space-x-3">
+                        <span class="text-emerald-700 font-bold">✓</span>
+                        <span class="text-sm text-stone-700">Custom sorting & calibrated sizes</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-emerald-700 font-bold">✓</span>
+                        <span class="text-sm text-stone-700">Vacuum packed to arrest aging</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-emerald-700 font-bold">✓</span>
+                        <span class="text-sm text-stone-700">Phytosanitary certification ready</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <span class="text-emerald-700 font-bold">✓</span>
+                        <span class="text-sm text-stone-700">Available in Fresh Air-Freight or Frozen Container</span>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-2xl bg-stone-800 aspect-[4/3] group">
+                <!-- Gambar visual kesegaran daun pisang tropis -->
+                <img src="https://images.unsplash.com/photo-1528475429372-5742c53fe5da?auto=format&fit=crop&w=1000&q=80" alt="Fresh Indonesian Banana Leaves" class="w-full h-full object-cover group-hover:scale-102 transition duration-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE B2B INQUIRY FORM -->
+    <section id="contact" class="py-24 max-w-4xl mx-auto px-6 text-center">
+        <span class="text-xs font-bold uppercase tracking-widest text-stone-400">Global Trade Desk</span>
+        <h2 class="serif-title text-3xl md:text-4xl font-semibold text-stone-900 mt-2">Request Technical Sheet & FOB Quote</h2>
+        <p class="text-stone-500 mt-3 max-w-lg mx-auto text-sm">Fill in your industrial requirements. Our international trade team will reach out within 12 business hours.</p>
+        
+        <form class="mt-12 text-left bg-white border border-stone-200/80 p-8 rounded-3xl shadow-sm space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-xs font-semibold text-stone-600 uppercase tracking-wider mb-2">Company Name</label>
+                    <input type="text" placeholder="e.g. EuroFoods GmbH" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:outline-none focus:border-emerald-700 text-sm transition">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-stone-600 uppercase tracking-wider mb-2">Corporate Email</label>
+                    <input type="email" placeholder="purchasing@company.com" class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:outline-none focus:border-emerald-700 text-sm transition">
+                </div>
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-stone-600 uppercase tracking-wider mb-2">Product of Interest</label>
+                <select class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:outline-none focus:border-emerald-700 text-sm text-stone-600 transition">
+                    <option>Premium Coconut Charcoal Briquettes</option>
+                    <option>Fresh / Frozen Banana Leaves</option>
+                    <option>Mixed Container Consolidation</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-stone-600 uppercase tracking-wider mb-2">Estimated Volume / Target Port</label>
+                <textarea rows="3" placeholder="Describe your monthly volume requirements and preferred Destination Port (e.g., 20ft Container to Port of Rotterdam)..." class="w-full px-4 py-3 rounded-xl bg-stone-50 border border-stone-200 focus:outline-none focus:border-emerald-700 text-sm transition"></textarea>
+            </div>
+            <button type="button" onclick="alert('Thank you! This is a demo template simulation.')" class="w-full bg-stone-900 hover:bg-emerald-800 text-white py-4 rounded-xl font-medium tracking-wide transition shadow-md">
+                Submit Inquiry Verification
+            </button>
+        </form>
+    </section>
+
+    <!-- MINIMALIST FOOTER -->
+    <footer class="bg-stone-900 text-stone-500 py-12 text-xs border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <p>&copy; 2026 Archipelago Export Corporation. All rights reserved.</p>
+                <p class="text-stone-600 mt-1">Sourced Ethically from Indonesia. Deployed globally via Cloudflare Network.</p>
+            </div>
+            <div class="space-x-6">
+                <a href="#" class="hover:text-stone-300">Terms of Freight (Incoterms)</a>
+                <a href="#" class="hover:text-stone-300">Privacy Policy</a>
+            </div>
         </div>
     </footer>
 
